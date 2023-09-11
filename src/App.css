@@ -1,0 +1,117 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.chat-avatar {
+  border-radius: 50%; 
+  width: 40px; 
+  height: 40px;
+}
+
+.avatar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #007bff;
+  border-radius: 50%;
+  margin: 0 auto; 
+}
+
+.chat-icon:hover {
+  background-color: #0056b3; 
+}
+
+.chat-container {
+  position: fixed;
+  bottom: 100px;
+  right: 70px;
+  z-index: 999;
+}
+
+.chat-modal {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 350px; 
+  height: 500px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.chat-input {
+  margin-bottom: 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  height: 25px;
+  position: fixed;
+  bottom: 120px;
+  right: 150px;
+  background-color: #fff;
+  width: 280px; 
+}
+
+.chat-submit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px; 
+  top: 92%; 
+  transform: translateY(-50%); 
+}
+
+
+.chat-submit-button:hover {
+  background-color: #0056b3;
+}
+
+.chat-message {
+  background-color: #e2e2e2; 
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 3px 5px;
+  margin-bottom: 10px;
+  max-width: 60%;
+  word-wrap: break-word; 
+}
+
+.chat-message.user {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: #fff;
+  margin-left: auto;
+}
+
+.chat-message.bot:first-letter{
+  text-transform: capitalize;
+}
